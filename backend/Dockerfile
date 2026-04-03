@@ -12,4 +12,4 @@ COPY src ./src
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["sh", "-c", "npm run prisma:push && npm start"]

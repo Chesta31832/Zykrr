@@ -37,10 +37,12 @@ Backend:
 ```bash
 cd backend
 npm install
+npm run prisma:generate
+npm run prisma:push
 npm start
 ```
 
-`npm start` pushes the Prisma schema and launches the API.
+Run `npm run prisma:push` whenever the Prisma schema changes.
 
 Frontend:
 
